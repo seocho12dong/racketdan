@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<!--
+	Exponent by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SJMQ4T5JN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6SJMQ4T5JN');
+    </script>
+    <title>중앙대학교 라켓단</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]>
+    <script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="shortcut icon" href="../images/icon/logo_circle.png" type="image/x-icon" />
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="../assets/css/ie8.css"/><![endif]-->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="../assets/css/ie9.css"/><![endif]-->
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+            const offset = -currentSlide * 100;
+            document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlide);
+        });
+
+    </script>
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+    <img >
+    <h1><a href="../index.html">라켓단</a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../introduce.html">소개</a></li>
+            <li><a href="../activity.html">활동내역</a></li>
+            <li><a href="../contact.html">문의</a></li>
+            <li><a href="../regulations.html">회칙</a></li>
+            <li><a href="../recruit.html">지원하기</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Fixed Menu (Mobile View) -->
+<div class="fixed-menu">
+    <a href="../index.html">
+        <img src="../images/icon/icon_home.png" alt="Home" style="width: 24px; height: 24px;" />
+        <span>홈</span>
+    </a>
+    <a href="../introduce.html">
+        <img src="../images/icon/icon_intro.png" alt="Search" style="width: 24px; height: 24px;" />
+        <span>소개</span>
+    </a>
+    <a href="../activity.html">
+        <img src="../images/icon/icon_gallery.png" alt="Rate" style="width: 24px; height: 24px;" />
+        <span>활동내역</span>
+    </a>
+    <a href="../contact.html">
+        <img src="../images/icon/icon_conversation.png" alt="News" style="width: 24px; height: 24px;" />
+        <span>문의</span>
+    </a>
+    <a href="../regulations.html">
+        <img src="../images/icon/icon_rule.png" alt="News" style="width: 24px; height: 24px;" />
+        <span>회칙</span>
+    </a>
+    <a href="../recruit.html">
+        <img src="../images/icon/icon_apply.jpg" alt="My Page" style="width: 24px; height: 24px;" />
+        <span>지원</span>
+    </a>
+</div>
+
+<!-- Main -->
+<div id="main" class="container">
+    <header class="major">
+        <h2>중앙X서강X숭실 교류전</h2>
+        <p>2024-10-27</p>
+    </header>
+
+
+    <div class="row 50%" style="display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;">
+        <div class="8u 12u$(medium)">
+            <!-- Content -->
+            <section id="content">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="../images/racketdan/act/241027/1.jpeg" alt="Slide 1">
+                        </div>
+                        <div class="slide">
+                            <img src="../images/racketdan/act/241027/2.jpeg" alt="Slide 2">
+                        </div>
+                        <div class="slide">
+                            <img src="../images/racketdan/act/241027/3.jpeg" alt="Slide 3">
+                        </div>
+                        <div class="slide">
+                            <img src="../images/racketdan/act/241027/4.jpeg" alt="Slide 4">
+                        </div>
+                        <div class="slide">
+                            <img src="../images/racketdan/act/241027/5.jpeg" alt="Slide 5">
+                        </div>
+                        <div class="slide">
+                            <img src="../images/racketdan/act/241027/6.jpeg" alt="Slide 6">
+                        </div>
+                        <div class="slide">
+                            <img src="../images/racketdan/act/241027/7.jpeg" alt="Slide 7">
+                        </div>
+                        <div class="slide">
+                            <img src="../images/racketdan/act/241027/8.jpeg" alt="Slide 8">
+                        </div>
+                        <div class="slide">
+                            <img src="../images/racketdan/act/241027/9.jpeg" alt="Slide 9">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/racketdan/act/241027/10.jpeg활동내역" alt="Slide 10">
+                        </div>
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+
+                <div class="content">
+                    <p>
+                        🏓 중앙X서강X숭실 교류전 🏓<br><br>
+
+                        2024년 10월 27일에 중앙대&서강대&숭실대 3개학교 교류전을 진행하였습니다.<br><br>
+
+                        먼저 통합 부수로 나누어 조를 짜고. 그 후 중앙대와 서강대, 숭실대가 한 팀을 이루어 9조로 나눠 리그전을 진행하였습니다!<br><br>
+
+                        모든 경기가 끝난 후에는 뒤풀이로 맛있는 고기🍖와 술을 마시고 2차까지 가며 친목을 다지는 즐거운 시간을 보냈습니다!!<br><br>
+
+                        이번 교류전에 참여해주신 라켓단 부원분들, 서강탁구반 부원분들, 드라이브 부원분들 모두 정말 감사드립니다!!😊❤️<br><br>
+
+                        다음은 리그전 결과입니다.<br><br>
+
+                        1위 : 8조<br>
+                        🥇김병찬(중앙대), 유승연(숭실대), 이현(중앙대), 이승민(서강대), 지윤성(중앙대), 김규현(서강대)<br>
+                        2위 : 9조<br>
+                        🥈김민송(서강대), 조동희(서강대), 한최수(중앙대), 박관영(중앙대), 조빈(숭실대), 김규민(중앙대)<br>
+                        3위 : 6조<br>
+                        🥉황현준(숭실대), 김아순(서강대), 박도현(서강대), 송영빈(중앙대), 유한진(중앙대), 김상화(숭실대)<br>
+                        4위 : 7조<br>
+                        🥉기건우(숭실대), 김준형(서강대), 김정완(서강대), 윤홍(중앙대), 서장호(중앙대), 김수겸(중앙대)<br><br>
+                    </p>
+                </div>
+                <ul class="actions">
+                    <li><a href="../activity.html" class="button middle special">목록으로</a></li>
+                </ul>
+                <br><br>
+                <br><br>
+            </section>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="footer-container">
+            <!-- Footer Left Section -->
+            <section class="footer-left">
+                <h1>Racketdan</h1>
+                <p>2024 Ver. Created by 유한진</p>
+                <p style="white-space: nowrap;">서울특별시 동작구 흑석로 84 중앙대학교 학생회관(107관) 309호<br>
+                    cau.racketdan@gmail.com</p>
+            </section>
+            <!-- Footer Right Section -->
+            <section class="footer-right">
+                <div class="footer-contact">
+                    <h1 style="margin: 0;">회장</h1>
+                    <p>안지민 010-4066-0597</p>
+                </div>
+                <div class="footer-contact">
+                    <h1 style="margin: 0;">부회장</h1>
+                    <p>유한진 010-2808-9803</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div style="margin-top: 0.2rem;" class="copyright container">
+        <p>&copy;RACKETDAN. All rights reserved.</p>
+        <ul class="menu">
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery.scrolly.min.js"></script>
+<script src="../assets/js/skel.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
