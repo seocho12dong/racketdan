@@ -1,0 +1,8 @@
+1.0.0 final
+1.0.1 regulations 오탈자 수정 및 text-align left로 수정
+1.2.0 
+	image 전부 png에서 jpeg로 수정, 이미지로드 속도 개선
+	갤러리 -> 활동내역으로 변경
+	act 모바일 배너 추가
+	모바일 환경 하단 배너가 section 가리는 현상 수정
+	contact의 버튼 점선뜨는 현상 수정
