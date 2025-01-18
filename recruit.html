@@ -23,52 +23,18 @@
   <link rel="shortcut icon" href="./images/icon/logo_circle.png" type="image/x-icon" />
   <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
   <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  <script src="header.js" type="module"></script>
+  <script src="fixed-menu.js" type="module"></script>
+  <script src="footer.js" type="module"></script>
+
 </head>
 <body>
 
 <!-- Header -->
-<header id="header">
-  <img >
-  <h1><a href="index.html">라켓단</a></h1>
-  <nav id="nav">
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="introduce.html">소개</a></li>
-      <li><a href="activity.html">활동내역</a></li>
-      <li><a href="contact.html">문의</a></li>
-      <li><a href="regulations.html">회칙</a></li>
-      <li><a href="recruit.html">지원하기</a></li>
-    </ul>
-  </nav>
-</header>
+<header-component></header-component>
 
 <!-- Fixed Menu (Mobile View) -->
-<div class="fixed-menu">
-  <a href="index.html">
-    <img src="./images/icon/icon_home.png" alt="Home" style="width: 24px; height: 24px;" />
-    <span>홈</span>
-  </a>
-  <a href="introduce.html">
-    <img src="./images/icon/icon_intro.png" alt="Search" style="width: 24px; height: 24px;" />
-    <span>소개</span>
-  </a>
-  <a href="activity.html">
-    <img src="./images/icon/icon_gallery.png" alt="Rate" style="width: 24px; height: 24px;" />
-    <span>활동내역</span>
-  </a>
-  <a href="contact.html">
-    <img src="./images/icon/icon_conversation.png" alt="News" style="width: 24px; height: 24px;" />
-    <span>문의</span>
-  </a>
-  <a href="regulations.html">
-    <img src="./images/icon/icon_rule.png" alt="News" style="width: 24px; height: 24px;" />
-    <span>회칙</span>
-  </a>
-  <a href="recruit.html">
-    <img src="./images/icon/icon_apply.jpg" alt="My Page" style="width: 24px; height: 24px;" />
-    <span>지원</span>
-  </a>
-</div>
+<fixed-menu-component></fixed-menu-component>
 
 
 <!-- Main -->
@@ -157,38 +123,7 @@ height: 100%;">
 </div>
 
 <!-- Footer -->
-<footer id="footer">
-  <div class="container">
-    <div class="footer-container">
-      <!-- Footer Left Section -->
-      <section class="footer-left">
-        <h1>Racketdan</h1>
-        <p>2024 Ver. Created by 유한진</p>
-        <p style="white-space: nowrap;">서울특별시 동작구 흑석로 84 중앙대학교 학생회관(107관) 309호<br>
-          cau.racketdan@gmail.com</p>
-      </section>
-      <!-- Footer Right Section -->
-      <section class="footer-right">
-        <div class="footer-contact">
-          <h1 style="margin: 0;">회장</h1>
-          <p>안지민 010-4066-0597</p>
-        </div>
-        <div class="footer-contact">
-          <h1 style="margin: 0;">부회장</h1>
-          <p>유한진 010-2808-9803</p>
-        </div>
-      </section>
-    </div>
-  </div>
-  <div style="margin-top: 0.2rem;" class="copyright container">
-    <p>&copy;RACKETDAN. All rights reserved.</p>
-    <ul class="menu">
-      <li><a href="#">Terms of Use</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </div>
-</footer>
+<footer-component></footer-component>
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
