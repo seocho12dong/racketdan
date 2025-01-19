@@ -4081,3 +4081,54 @@ body {
 		max-width: 100%;
 	}
 }
+
+#banner {
+	background-attachment: fixed, fixed;
+	background-image: url("images/overlay.png"), url("../../images/banner_image2.jpg");
+	background-position: top left, center center;
+	background-repeat: repeat, no-repeat;
+	background-size: auto, cover;
+	color: #000;
+	height: 100vh; /* viewport height를 사용하여 전체 화면 높이 설정 */
+	min-height: 100vh; /* 최소 높이도 viewport height로 설정 */
+	position: relative;
+	text-align: center;
+	display: flex; /* Flexbox 사용 */
+	align-items: center; /* 세로 중앙 정렬 */
+	justify-content: center; /* 가로 중앙 정렬 */
+}
+
+#banner:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
+
+#banner .inner {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	padding: 0 20px; /* 좌우 여백 추가 */
+	box-sizing: border-box; /* 패딩을 포함한 전체 너비 계산 */
+}
+
+/* 모바일 환경을 위한 미디어 쿼리 */
+@media screen and (max-width: 736px) {
+	#banner {
+		background-attachment: scroll; /* 모바일에서는 fixed 대신 scroll 사용 */
+		padding: 6em 0; /* 상하 여백 조정 */
+	}
+
+	#banner h2 {
+		font-size: 1.75em; /* 폰트 크기 조정 */
+	}
+
+	#banner .more {
+		display: none; /* 'Learn More' 버튼 숨김 (선택사항) */
+	}
+}
