@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Exponent by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SJMQ4T5JN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6SJMQ4T5JN');
+    </script>
+    <title>중앙대학교 라켓단</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]>
+    <script src="../../assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="shortcut icon" href="../../images/icon/logo_circle.png" type="image/x-icon" />
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="../../assets/css/ie8.css"/><![endif]-->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="../../assets/css/ie9.css"/><![endif]-->
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+            const offset = -currentSlide * 100;
+            document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlide);
+        });
+
+    </script>
+
+    <script src="../../component/header_act.js" type="module"></script>
+    <script src="../../component/fixed-menu_act.js" type="module"></script>
+    <script src="../../component/footer.js" type="module"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header-act-component></header-act-component>
+
+<!-- Fixed Menu (Mobile View) -->
+<fixed-menu-act-component></fixed-menu-act-component>
+
+<!-- Main -->
+<div id="main" class="container">
+    <header class="major">
+        <h2>샐러마카 전국오픈 탁구대회</h2>
+        <p>2024-09-09 ~ 10</p>
+    </header>
+
+
+    <div class="row 50%" style="display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;">
+        <div class="8u 12u$(medium)">
+            <!-- Content -->
+            <section id="content">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="../../images/racketdan/act/240909/1.jpeg" alt="Slide 1">
+                        </div>
+                        <div class="slide">
+                            <img src="../../images/racketdan/act/240909/2.jpeg" alt="Slide 2">
+                        </div>
+                        <div class="slide">
+                            <img src="../../images/racketdan/act/240909/3.jpeg" alt="Slide 3">
+                        </div>
+                        <div class="slide">
+                            <img src="../../images/racketdan/act/240909/4.jpeg" alt="Slide 4">
+                        </div>
+                        <div class="slide">
+                            <img src="../../images/racketdan/act/240909/5.jpeg" alt="Slide 5">
+                        </div>
+                        <div class="slide">
+                            <img src="../../images/racketdan/act/240909/6.jpeg" alt="Slide 6">
+                        </div>
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+
+                <div class="content">
+                    <p>
+                        🏓 2024-2 의혈문화제 동아리 박람회 🏓<br><br>
+
+                        2024년 9월 9일~10일에 제39대 동아리연합회 Link가 주최하는 중앙대학교 서울캠퍼스 2024 동아리 박람회에 참여했습니다.<br><br>
+
+                        동아리 박람회를 운영하는데 도움을 주신 라켓단 부원분들 모두 고생 많으셨습니다! 그리고 저희 동아리 부스에 참여해주신 모든 분들께 정말 감사드립니다!!😊❤️<br><br>
+
+                        신입부원 추가 모집에 예상보다 훨씬 많은 분들의 지원으로 인해, 모든 분들에게 따로 연락을 드리지 못한 점, 정말 죄송합니다.<br><br>
+
+                        현재 저희 라켓단 동아리의 24-2 신입부원 모집은 모두 마감되었습니다!<br>
+                        다음 학기에 지원해주시면 감사하겠습니다🙂<br><br>
+                    </p>
+                </div>
+                <ul class="actions">
+                    <li><a href="../activity.html" class="button middle special">목록으로</a></li>
+                </ul>
+                <br><br>
+                <br><br>
+            </section>
+
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer-component></footer-component>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrolly.min.js"></script>
+<script src="../../assets/js/skel.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="../../assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="../../assets/js/main.js"></script>
+
+</body>
+</html>

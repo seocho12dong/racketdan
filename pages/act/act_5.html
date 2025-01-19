@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<!--
+	Exponent by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SJMQ4T5JN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6SJMQ4T5JN');
+    </script>
+    <title>중앙대학교 라켓단</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]>
+    <script src="../../assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="shortcut icon" href="../../images/icon/logo_circle.png" type="image/x-icon" />
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="../../assets/css/ie8.css"/><![endif]-->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="../../assets/css/ie9.css"/><![endif]-->
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+            const offset = -currentSlide * 100;
+            document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlide);
+        });
+
+    </script>
+
+    <script src="../../component/header_act.js" type="module"></script>
+    <script src="../../component/fixed-menu_act.js" type="module"></script>
+    <script src="../../component/footer.js" type="module"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header-act-component></header-act-component>
+
+<!-- Fixed Menu (Mobile View) -->
+<fixed-menu-act-component></fixed-menu-act-component>
+
+<!-- Main -->
+<div id="main" class="container">
+    <header class="major">
+        <h2>라켓단 일일만남</h2>
+        <p>2024-09-23</p>
+    </header>
+
+
+    <div class="row 50%" style="display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;">
+        <div class="8u 12u$(medium)">
+            <!-- Content -->
+            <section id="content">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="../../images/racketdan/act/240923/1.jpeg" alt="Slide 1">
+                        </div>
+                        <div class="slide">
+                            <img src="../../images/racketdan/act/240923/2.jpeg" alt="Slide 2">
+                        </div>
+                        <div class="slide">
+                            <img src="../../images/racketdan/act/240923/3.jpeg" alt="Slide 3">
+                        </div>
+                        <div class="slide">
+                            <img src="../../images/racketdan/act/240923/4.jpeg" alt="Slide 4">
+                        </div>
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+
+                <div class="content">
+                    <p>
+                        🏓 라켓단 일일만남 🏓<br><br>
+
+                        2024년 9월 23일에 기존 부원과 신입 부원이 친목을 도모하는 자리인 일일만남을 진행하였습니다.<br><br>
+
+                        먼저 노들섬에 가서 강가에 돗자리피고 치킨🍗이랑 떡볶이, 맥주🍺를 먹으며 신나게 대화하면서 친목을 다졌습니다. 이후 학교 주변에 있는 술집에서 밤늦게까지 즐거운 시간을 보냈습니다!<br><br>
+
+                        일일만남에 참여해주신 라켓단 부원분들 모두 고생 많으셨습니다!!😊❤️<br><br>
+                    </p>
+                </div>
+                <ul class="actions">
+                    <li><a href="../activity.html" class="button middle special">목록으로</a></li>
+                </ul>
+                <br><br>
+                <br><br>
+            </section>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer-component></footer-component>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrolly.min.js"></script>
+<script src="../../assets/js/skel.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="../../assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="../../assets/js/main.js"></script>
+
+</body>
+</html>
