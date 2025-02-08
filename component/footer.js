@@ -8,6 +8,7 @@ class Footer extends HTMLElement {
       <section class="footer-left">
         <h1>Racketdan</h1>
         <p>2024 Ver. Created by 유한진</p>
+        <p>사이트 관련 문의 seocho12dong@naver.com</p>
         <p style="white-space: nowrap;">서울특별시 동작구 흑석로 84 중앙대학교 학생회관(107관) 309호<br>
           cau.racketdan@gmail.com</p>
       </section>
@@ -15,11 +16,11 @@ class Footer extends HTMLElement {
       <section class="footer-right">
         <div class="footer-contact">
           <h1 style="margin: 0;">회장</h1>
-          <p>안지민 010-4066-0597</p>
+          <p>김태준 010-4624-2399</p>
         </div>
         <div class="footer-contact">
           <h1 style="margin: 0;">부회장</h1>
-          <p>유한진 010-2808-9803</p>
+          <p>박영주 010-2458-0430</p>
         </div>
       </section>
     </div>
